@@ -81,12 +81,19 @@ const gameLogic = (() => {
     if (gameBoard.isNotBoardFull() === false)
       return 'Draw';
   };
+  const _addColorMark = (button) => {
+    if (_currentPlayer === _firstPlayer)
+      button.classList.add("x-mark");
+    else
+      button.classList.add("o-mark");
+  };
   const _placeMark = (button) => {
     if (button.textContent === '') {
       index = Number(button.getAttribute("data-index"));
       mark = _currentPlayer.getMark();
       gameBoard.placeMark(index, mark);
       button.textContent = mark;
+      _addColorMark(button);
     } else return;
   };
   const _startNewRound = () => {

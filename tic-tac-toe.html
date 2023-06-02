@@ -8,31 +8,35 @@
   <link rel="stylesheet" href="tic-tac-toe.css">
 </head>
 <body>
-  <h1>Tic tac toe</h1>
-  <div class="board-container">
-    <div class="board-cell"><button data-index="0"></button></div>
-    <div class="board-cell"><button data-index="1"></button></div>
-    <div class="board-cell"><button data-index="2"></button></div>
-    <div class="board-cell"><button data-index="3"></button></div>
-    <div class="board-cell"><button data-index="4"></button></div>
-    <div class="board-cell"><button data-index="5"></button></div>
-    <div class="board-cell"><button data-index="6"></button></div>
-    <div class="board-cell"><button data-index="7"></button></div>
-    <div class="board-cell"><button data-index="8"></button></div>
-  </div>
-  <form action="" method="post" name="players">
-    <label>
-      First player name:
-      <input type="text" name="ttt-first-player-name" placeholder="Jotaro" required>
-    </label>
-    <label>
-      Second player name:
-      <input type="text" name="ttt-second-player-name" placeholder="DIO" required>
-    </label>
-    <input type="submit" value="Add player names">
-  </form>
-  <h2></h2>
-  <button id="start-game">Start/restart game</button>
+  <header>
+    <h1>Tic tac toe</h1>
+  </header>
+  <main>
+    <div class="board-container">
+      <div class="board-cell"><button data-index="0"></button></div>
+      <div class="board-cell"><button data-index="1"></button></div>
+      <div class="board-cell"><button data-index="2"></button></div>
+      <div class="board-cell"><button data-index="3"></button></div>
+      <div class="board-cell"><button data-index="4"></button></div>
+      <div class="board-cell"><button data-index="5"></button></div>
+      <div class="board-cell"><button data-index="6"></button></div>
+      <div class="board-cell"><button data-index="7"></button></div>
+      <div class="board-cell"><button data-index="8"></button></div>
+    </div>
+    <form action="" method="post" name="players">
+      <label>
+        *First player name:
+        <input type="text" name="ttt-first-player-name" placeholder="Jotaro" required>
+      </label>
+      <label>
+        *Second player name:
+        <input type="text" name="ttt-second-player-name" placeholder="DIO" required>
+      </label>
+      <input type="submit" value="Add player names">
+    </form>
+    <h2></h2>
+    <button id="start-game">Start/restart game</button>
+  </main>
   <script src="scripts/tic-tac-toe.js"></script>
 </body>
 </html>
