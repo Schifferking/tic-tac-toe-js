@@ -20,7 +20,19 @@
     <div class="board-cell"><button data-index="7"></button></div>
     <div class="board-cell"><button data-index="8"></button></div>
   </div>
+  <form action="" method="post" name="players">
+    <label>
+      First player name:
+      <input type="text" name="ttt-first-player-name" placeholder="Jotaro" required>
+    </label>
+    <label>
+      Second player name:
+      <input type="text" name="ttt-second-player-name" placeholder="DIO" required>
+    </label>
+    <input type="submit" value="Add player names">
+  </form>
   <h2></h2>
+  <button id="start-game">Start/restart game</button>
   <script src="scripts/tic-tac-toe.js"></script>
 </body>
 </html>
